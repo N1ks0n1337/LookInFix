@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-<<<<<<< HEAD
-=======
-import ManBg from '../../image/specialists/ManBg.png'
-import WomanBg from '../../image/specialists/WomanBg.png'
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
 
 export const Container = styled.div`
     width: 100%;
@@ -27,10 +22,6 @@ export const Block = styled.div`
     display: flex;
     @media (min-width: 750px){
         justify-content: space-evenly;
-<<<<<<< HEAD
-=======
-        margin-bottom: -270px;
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
         :nth-child(2n){
         flex-direction: row-reverse;
         }
@@ -39,7 +30,6 @@ export const Block = styled.div`
         flex-direction: column-reverse;
         margin: 60px auto;
     }
-<<<<<<< HEAD
 
 
 `
@@ -47,42 +37,11 @@ export const ImageContainer = styled.div`
     position: relative;
 
 `
-=======
-    @media (max-width: 750px) {
-        :not(:first-child){
-            margin-top: 480px;
-        }
-    }
-    @media (max-width: 540px) {
-        :not(:first-child){
-            margin-top: 350px;
-        }
-    }
-    @media (max-width: 390px) {
-        :not(:first-child){
-            margin-top: 250px;
-        }
-    }
-
-`
-export const ImageContainer = styled.div`
-    position: relative;
-
-`
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
 export const Image = styled.img`
     width: 774px;
     @media (max-width: 1074px) {
         width: 550px;
     }
-<<<<<<< HEAD
-=======
-    @media (max-width: 750px) {
-        position: absolute;
-        top: -80px;
-        left: -180px;
-    }
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
     @media (max-width: 540px) {
         width: 400px;
         top: -50px;
@@ -93,21 +52,12 @@ export const Image = styled.img`
         top: -50px;
         left: -60px;
     }
-<<<<<<< HEAD
 `
 export const TextContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
 `
-=======
-`
-export const TextContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-`
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
 
 export const TextNumber = styled.h2`
     display: flex;
@@ -164,11 +114,6 @@ export const BlueLine = styled.hr`
     width: 30px;
     margin: 30px 13px;
 `
-export const BlueLine = styled.hr`
-    border-bottom: 1px solid #9ecef5;
-    width: 30px;
-    margin: 30px 13px;
-`
 export const Title = styled.div`
     margin-top: 20px;
     display: flex;
@@ -184,7 +129,6 @@ export const Title = styled.div`
     @media(max-width: 708px){
         font-size: 30px
     }
-<<<<<<< HEAD
     @media(max-width: 554px){
         font-size: 27px
     }
@@ -194,17 +138,6 @@ export const Title = styled.div`
     @media(max-width: 370px){
         font-size: 20px
     }
-=======
-    @media(max-width: 596px){
-        font-size: 20px
-    }
-    @media(max-width: 432px){
-        font-size: 15px
-    }
-    @media(max-width: 355px){
-        font-size: 12px
-    }
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
 `
 export const SubTitle = styled.div`
     font-size: 22px;
@@ -215,10 +148,6 @@ export const SubTitle = styled.div`
     letter-spacing: normal;
     text-align: center;
     color: #2e2e2e;
-<<<<<<< HEAD
-=======
-    margin-bottom: -100px;
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
     @media(max-width: 611px){
         font-size: 20px
     }

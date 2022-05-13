@@ -35,11 +35,7 @@ const Specialists = props => {
                         </ImageContainer>
                         <TextContainer>
                             <TextNumber><BlueLine/>01<BlueLine/></TextNumber>
-<<<<<<< HEAD
                             <Text><EnterImg src={Enter}/>Регистрируетесь<br/> на сайте</Text>
-=======
-                            <Text><EnterImg src={Enter}/>Заполняете<br/>анкету</Text>
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
                         </TextContainer>
                     </Block>
                     <Block>
@@ -48,11 +44,7 @@ const Specialists = props => {
                         </ImageContainer>
                         <TextContainer>
                             <TextNumber><BlueLine/>02<BlueLine/></TextNumber>
-<<<<<<< HEAD
                             <Text><EnterImg src={Enter}/>Заполняете<br/> анкету</Text>
-=======
-                            <Text><EnterImg src={Enter}/>Регестрируйтесь<br/> на сайте</Text>
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
                         </TextContainer>
                     </Block>
                     <Block>
@@ -61,11 +53,7 @@ const Specialists = props => {
                         </ImageContainer>
                         <TextContainer>
                             <TextNumber><BlueLine/>03<BlueLine/></TextNumber>
-<<<<<<< HEAD
                             <Text><EnterImg src={Enter}/>Вам будет предложено<br/> несколько подходящих<br/> специалистов</Text>
-=======
-                            <Text><EnterImg src={Enter}/>Регестрируйтесь<br/> на сайте</Text>
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
                         </TextContainer>
                     </Block>
                     <Block>
@@ -74,11 +62,7 @@ const Specialists = props => {
                         </ImageContainer>
                         <TextContainer>
                             <TextNumber><BlueLine/>04<BlueLine/></TextNumber>
-<<<<<<< HEAD
                             <Text><EnterImg src={Enter}/>Выберите удобное время <br/>для консультации</Text>
-=======
-                            <Text><EnterImg src={Enter}/>Регестрируйтесь<br/> на сайте</Text>
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
                         </TextContainer>
                     </Block>
                 </SpecialistsWrapper>
