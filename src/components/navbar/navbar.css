@@ -1,0 +1,21 @@
+
+.search-form-input {
+    max-width: 200px;
+    height: 35px;
+    margin-right: 5px;
+    padding: 0 1rem;
+    border: 1px solid #d5d5d5;
+    background: transparent;
+    font-family: Tahoma, sans-serif;
+    font-size: 13px;
+  }
+  
+  .search-form-btn {
+    vertical-align: bottom;
+    width: 35px;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+    background: rgba( 255, 255, 255, .25);
+    cursor: pointer;
+  }
