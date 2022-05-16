@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from '../../components/navbar/Navbar';
-import {BackgroundImg ,Line, Items, Item, ItemTimes, ItemDescr,TitleBack ,Container, TitleBlue, Wrapper, SubTitle, Title, SubTitleBlue } from './Header.elements';
+import {BackgroundImg ,Line, Items, Item, ItemTimes, ItemDescr,TitleBack ,Container, TitleBlue, Wrapper, SubTitle, Title, SubTitleBlue,BackgroundWhite } from './Header.elements';
 import Button from '../../components/button/Button';
 
 const header = props => {
     return (
         <Container>
             <BackgroundImg>
+            <BackgroundWhite>
             <Navbar/>
             <Wrapper>
             <SubTitle><TitleBack/><Line/> проблемы&nbsp; <SubTitleBlue> в семье?</SubTitleBlue></SubTitle>
@@ -31,6 +32,7 @@ const header = props => {
                     </Item>
                 </Items>
             </Wrapper>
+            </BackgroundWhite>
             </BackgroundImg>
         </Container>
     );

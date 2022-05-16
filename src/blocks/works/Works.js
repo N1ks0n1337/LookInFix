@@ -21,7 +21,9 @@ import { Container,
         Counter,
         AllCounter,
         SliderCounter,
-        Blocks
+        Blocks,
+        BackgroundWhite, 
+        BackBottom
         } from './Works.elements';
 import ImgOne from '../../image/sliderElem1.svg'
 import ImgTwo from '../../image/sliderElem2.svg'
@@ -32,6 +34,8 @@ import ArrowLeftIcon from '../../image/sliderArrowRight.svg'
 
 const Works = props => {
     return (
+        <BackBottom>
+        <BackgroundWhite>
         <Container>
             <Back>
             <Wrapper>
@@ -66,6 +70,8 @@ const Works = props => {
             </Wrapper>
             </Back>
         </Container>
+        </BackgroundWhite>
+        </BackBottom>
     );
 };
 

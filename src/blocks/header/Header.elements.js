@@ -1,37 +1,48 @@
 import styled from "styled-components";
 import HeaderBG from '../../image/headerBG.png'
+import backgroundWhite from '../../image/boots/back.png'
+
 
 export const BackgroundImg = styled.div`
-        background-image: url('${HeaderBG}');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 800px -550px;
-        background-clip: text;
-        @media(max-width: 1740px){
-          background-position: 800px -450px;
-        }
-        @media(max-width: 1613px){
-          background-position: 600px -350px;
-        }
-        @media(max-width: 1353px){
-          background-position: 600px -250px;
-        }
-        @media(max-width: 1250px){
-          background-position: 500px -150px;
-        }
-        @media(max-width: 1086px){
-          background-position: 400px -150px;
-        }
-        @media(max-width: 1086px){
-          background-position: 400px -150px;
-        }
-        @media(max-width: 950px){
-          background-size: 700px;
-          background-position: 500px -70px;
-        }
-        @media(max-width: 876px){
-          background-image: none; 
-        }
+  background-image: url('${HeaderBG}');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 800px -550px;
+  background-clip: text;
+  @media(max-width: 1740px){
+    background-position: 800px -450px;
+  }
+  @media(max-width: 1613px){
+    background-position: 600px -350px;
+  }
+  @media(max-width: 1353px){
+    background-position: 600px -250px;
+  }
+  @media(max-width: 1250px){
+    background-position: 500px -150px;
+  }
+  @media(max-width: 1086px){
+    background-position: 400px -150px;
+  }
+  @media(max-width: 1086px){
+    background-position: 400px -150px;
+  }
+  @media(max-width: 950px){
+    background-size: 700px;
+    background-position: 500px -70px;
+  }
+  @media(max-width: 876px){
+    background-image: none; 
+  }
+`
+export const BackgroundWhite = styled.div`
+  background-image: url('${backgroundWhite}');
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-clip: text;
+  @media(min-width: 1925px){
+    background-size: contain;
+  }
 `
 export const Container = styled.div`
     width: 100%;

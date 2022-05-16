@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import BorderImg from '../../image/sliderBorder.png'
 import Background from '../../image/sliderBlockBack.png'
+import backgroundWhite from '../../image/backSpec.png'
+import BackBottomimg from '../../image/backbottom.png'
 
 export const Container = styled.div`
     width: 100%;
-    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 70px;
 `
 
 export const Back = styled.div`
@@ -19,6 +22,24 @@ export const Back = styled.div`
         background-image: none;
         }
 `
+export const BackBottom = styled.div`
+        background-image: url('${BackBottomimg}');
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-clip: text;
+        @media(min-width: 1925px){
+            background-size: 100%;        
+        }
+`
+export const BackgroundWhite = styled.div`
+        background-image: url('${backgroundWhite}');
+        background-repeat: no-repeat;
+        background-position: 0 -30%;
+        background-clip: text;
+        @media(min-width: 1925px){
+            background-image: none;
+        }
+`
 
 export const Wrapper = styled.div`
     position: relative;
@@ -29,7 +50,6 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.div`
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +66,6 @@ export const Title = styled.div`
     @media(max-width: 554px){
         font-size: 27px;
         padding-top: 0px;
-        margin-bottom: 20px;
     }
     @media(max-width: 406px){
         font-size: 24px
@@ -85,7 +104,6 @@ margin-top: 117px;
 display: flex;
 justify-content: center;
 @media(max-width: 593px){
-    margin-top: 20px; 
 }
 `
 export const Block = styled.div`
@@ -175,7 +193,6 @@ export const BlockArrow = styled.div`
     justify-content: center;
     position: relative;
     margin-top: 50px;
-    margin-bottom: 50px;
     @media(max-width: 1143px){
         margin-top: 70px;
     }

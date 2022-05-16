@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    margin-top: 20px;
+    background-color: #fff;
 `
 export const Wrapper = styled.div`
     position: relative;
@@ -115,7 +115,6 @@ export const BlueLine = styled.hr`
     margin: 30px 13px;
 `
 export const Title = styled.div`
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;

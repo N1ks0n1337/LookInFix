@@ -19,3 +19,42 @@
     background: rgba( 255, 255, 255, .25);
     cursor: pointer;
   }
+  .modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  .modal__content{
+    padding: 90px 60px;
+    background-color: #fff;
+    width: 490px;
+    height: 503px;
+  }
+  .modal.active{
+    opacity: 1;
+    pointer-events: all;
+  }
+  .modal__title{
+    text-align: center;
+    color: #2e2e2e;
+    font-size: 32px;
+    font-family: 'PlayfairDisplay', serif;
+  }
+  .modal__subtitle{
+   text-align: center;
+   color: #2e2e2e;
+   font-family: 'ProximaNova';
+   font-size: 16px;
+   margin-top: 13px; 
+  }
+  

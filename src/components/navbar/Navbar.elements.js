@@ -121,4 +121,92 @@ export const MobileIcon = styled.div`
         }
     }
 `
-
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+`
+export const InputBox = styled.div`
+`
+export const FormImg = styled.img`
+  width: 16px;
+  margin-right: 15px;
+  padding-top: 3px;
+`
+export const Input = styled.input`
+  background-color: transparent;
+  font-family: 'Proxima Nova';
+  border: none;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3499ea;
+`
+export const Line = styled.span`
+  width: 310px;
+  height: 2px;
+  background-color: #3499ea;
+  margin-top: 15px;
+  margin-bottom: 38px;
+`
+export const BtnContainer = styled.div`
+margin-top: -30px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+`
+export const Btn = styled.button`
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: #3499ea;
+  width: 310px;
+  height: 65px;
+  border-radius: 4px 4px 20px 20px;
+  border-bottom: 7px solid #1a7cc5;
+  box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  transition: 0.2s all ease;
+  &:hover{
+    border-bottom: 2px solid #1a7cc5; 
+  }
+  @media(max-width: 1089px){
+    width: 321px;
+    font-size: 16px
+  }
+  @media(max-width: 380px){
+    width: 280px;
+    font-size: 14px;
+    height: 60px;
+  }
+`
+export const BtnBorder = styled.div`
+  border: solid 0.2px rgba(255, 255, 255, 0.3);
+  margin: 5px;
+  border-radius: 4px 4px 10px 10px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+export const Descr = styled.div`
+ font-size: 14px;
+ font-weight: 300;
+ color: #2e2e2e;
+ text-align: center;
+ line-height: 1.29;
+margin-top: 10px;
+`
+export const Blue = styled.span`
+color: #3499ea;
+`
+export const Exit = styled.img`
+position: absolute;
+top: -150px;
+`

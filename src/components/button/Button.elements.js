@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Btn = styled.button`
-  font-family: 'Proxima Nova';
+  font-family: 'Proxima Nova', sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #fff;

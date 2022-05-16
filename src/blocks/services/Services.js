@@ -14,11 +14,15 @@ import { Container,
         CardOne,
         CardTwo,
         CardThree,
-        CardFour
+        CardFour,
+        BackgroundWhite,
+        BackBottom  
         } from './Services.elements';
 
 const Services = props => {
     return (
+        <BackBottom>
+        <BackgroundWhite>
         <Container>
             <Wrapper>
             <Title><Line/>Наши&ensp;<TitleBlue>услуги</TitleBlue><Line/></Title>
@@ -57,6 +61,8 @@ const Services = props => {
             </CardWrapper>
             </Wrapper>
         </Container>
+        </BackgroundWhite>
+        </BackBottom>
     );
 };
 

@@ -113,6 +113,9 @@ export const BlockContent = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+@media(max-width: 500px){
+    text-align: center;
+}
 `
 export const BlockDescrWrapper = styled.div`
 max-width: 1500px;
@@ -141,10 +144,10 @@ margin-top: 63px;
 }
 `
 export const BlockDescrWrapperOne = styled.div`
-
+  font-family: 'Proxima Nova';
 `
 export const BlockDescrWrapperTitle = styled.div`
-  font-family: 'PlayfairDisplay';
+  font-family: 'Playfair Display';
   font-size: 22px;
   font-weight: normal;
   line-height: 1.82;
@@ -179,4 +182,7 @@ export const BlockTitle = styled.div`
 `
 export const BlockDescrWrapperTwo = styled.div`
 margin-top: 76px;
+@media(max-width: 500px){
+    text-align: center;
+}
 `

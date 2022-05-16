@@ -1,14 +1,38 @@
 import styled from "styled-components";
 import Background from '../../image/footer/bg.png'
-
+import backgroundWhite from '../../image/backSpec.png'
 
 export const Container = styled.div`
   background: linear-gradient(to top, transparent, #dae8f3);
   width: 100%;
   height: 100%;
-  margin-top: 20px;
   background-color: transparent;
 `
+export const BackgroundWhite = styled.div`
+  background-image: url('${backgroundWhite}');
+  background-repeat: no-repeat;
+  background-position: 0 -49%;
+  background-clip: text;
+  @media(max-width: 1529px){
+    background-position: 0 -49%;
+  }
+  @media(max-width: 1376px){
+    background-position: 0 -27%;
+  }
+  @media(max-width: 845px){
+    background-position: 0 -10%;
+  }
+  @media(max-width: 832px){
+    background-position: 0 -13%;
+  }
+  @media(max-width: 700px){
+    background-position: 0 -12%;
+  }
+  @media(max-width: 535px){
+    background-position: 0 -9%;
+  }
+`
+
 export const Back = styled.div`
   background-image: url('${Background}');
   background-repeat: no-repeat;
@@ -44,6 +68,12 @@ export const UnderWrapper = styled.div`
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
+  padding: 0 15px 15px 15px;
+  @media (max-width: 1000px){
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+  }
 `
 export const CopyrightBlock = styled.div`
   font-family: 'Proxima Nova';
@@ -55,6 +85,9 @@ export const CopyrightBlock = styled.div`
   letter-spacing: normal;
   text-align: left;
   color: #2e2e2e;
+  @media (max-width: 1000px){
+    font-size: 12px;
+  }
 `
 export const Contacts = styled.div`
 `
@@ -74,8 +107,85 @@ export const Messenger = styled.div`
 export const MessengerTitle = styled.div`
 
 `
-export const MessengerIcon = styled.div`
-
+export const MessengerIcn = styled.img`
+  width: 24px;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+`
+export const MessengerIcon = styled.a`
+  margin-top: 16px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  gap:10px;
+  cursor: pointer;
+`
+export const CircleYt = styled.span`
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0 rgba(123, 174, 217, 0.6);
+  background-image: linear-gradient(to right bottom, #bad3e8, #b3cee6, #accae3, #a4c5e1, #9dc1df);
+  :hover&{
+    background-image: linear-gradient(to bottom, #fc6565, #fc6262, #fc6060, #fb5d5d, #fb5a5a);
+  }
+`
+export const CircleInst = styled.span`
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0 rgba(123, 174, 217, 0.6);
+  background-image: linear-gradient(to right bottom, #bad3e8, #b3cee6, #accae3, #a4c5e1, #9dc1df);
+  :hover&{
+    background-image: linear-gradient(to right bottom, #e13db1, #ef309d, #f82687, #fe2571, #ff2c5b, #ff3d4d, #ff4d3f, #ff5c30, #ff6f27, #ff801e, #ff9115, #ffa20d);
+  }
+`
+export const CircleVk = styled.span`
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0 rgba(123, 174, 217, 0.6);
+  background-image: linear-gradient(to right bottom, #bad3e8, #b3cee6, #accae3, #a4c5e1, #9dc1df);
+  :hover&{
+    background-image: linear-gradient(to bottom, #6198c6, #6199c6, #6199c6, #619ac6, #619ac6);
+  }
+`
+export const CircleVib = styled.span`
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0 rgba(123, 174, 217, 0.6);
+  background-image: linear-gradient(to right bottom, #bad3e8, #b3cee6, #accae3, #a4c5e1, #9dc1df);
+  :hover&{
+    background-image: linear-gradient(to bottom, #a274d0, #9f71ce, #9c6ecc, #986bca, #9568c8);
+  }
+`
+export const CircleWa = styled.span`
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0 rgba(123, 174, 217, 0.6);
+  background-image: linear-gradient(to right bottom, #bad3e8, #b3cee6, #accae3, #a4c5e1, #9dc1df);
+  :hover&{
+    background-image: linear-gradient(to bottom, #84ca4f, #7fc74c, #7bc449, #76c247, #71bf44);
+  }
+`
+export const CircleTg = styled.span`
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0 rgba(123, 174, 217, 0.6);
+  background-image: linear-gradient(to right bottom, #bad3e8, #b3cee6, #accae3, #a4c5e1, #9dc1df);
+  :hover&{
+    background-image: linear-gradient(to bottom, #00b7ea, #00b3e9, #00afe8, #00abe6, #00a7e5);
+  }
 `
 export const NumberIcon = styled.img`
   margin-right: 13px;
@@ -109,6 +219,7 @@ export const EmailImg = styled.img`
   margin-right: 23px;
 `
 export const Pages = styled.div`
+  padding-left: 10px;
 `
 export const Navigations = styled.div`
   display: flex;
@@ -127,10 +238,13 @@ export const Links = styled.a`
   letter-spacing: 1.2px;
   text-align: left;
   color: #2e2e2e;
+  :hover&{
+    color: #3499ea;
+  }
 `
 
 export const Questions = styled.div`
-
+  padding-left: 15px;
 `
 
 export const QuestionsTitle = styled.div`
@@ -201,7 +315,7 @@ export const Blue = styled.a`
   text-decoration: underline;
 `
 export const Insta = styled.div`
-
+  padding-left: 15px;
 `
 export const TitleBlock = styled.div`
   display: flex;

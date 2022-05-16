@@ -1,17 +1,22 @@
 import React, {useState} from 'react';
-import { Container,Logo,LogoContainer, Wrapper, Menu, MenuItem, MenuItemLink, Icon, MobileIcon } from './Navbar.elements';
+import { Container, Exit,Blue,Descr ,BtnBorder ,Btn,BtnContainer,InputBox, Line,Input,FormImg ,Form,ModalContent,Modal,Logo,LogoContainer, Wrapper, Menu, MenuItem, MenuItemLink, Icon, MobileIcon } from './Navbar.elements';
 import ExitIcon from '../../image/icon/exit.svg'
 import MenuIcon from '../../image/icon/menu.svg';
 import Logotype from '../../image/logo.png'
 import { FaBars, FaTimes } from "react-icons/fa";
+import './navbar.css'
+import ManIcon from '../../image/footer/woman.svg'
+import exit from '../../image/modal/exit.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = props => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const [modalActive, setModalActive] = useState(false)
     return (
         <Container>
             <Wrapper>
             <LogoContainer>
-                <Logo src={Logotype}/>
+                <Link to={"/"}> <Logo src={Logotype}/> </Link>
             </LogoContainer>
             <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 {showMobileMenu ? <FaTimes/> : <FaBars/>}
@@ -19,22 +24,22 @@ const Navbar = props => {
             <Menu open={showMobileMenu}>
                 <MenuItem>
                     <MenuItemLink>
-                    услуги
+                    <Link to={"/boots"}> услуги</Link>
                     </MenuItemLink>
                 </MenuItem>
                 <MenuItem>
                     <MenuItemLink>
-                    темы
+                    <Link to={"/mission"}>темы</Link>
                     </MenuItemLink>
                 </MenuItem>
                 <MenuItem>
                     <MenuItemLink>
-                    статьи
+                    <Link to={"/news"}>статьи</Link>
                     </MenuItemLink>
                 </MenuItem>
                 <MenuItem>
-                    <MenuItemLink>
-                    контакты
+                    <MenuItemLink >
+                    <Link to={"/ourmission"}>контакты</Link>
                     </MenuItemLink>
                 </MenuItem>
                 <MenuItem>
@@ -48,7 +53,7 @@ const Navbar = props => {
                     </MenuItemLink>
                 </MenuItem>
                 <MenuItem>
-                    <MenuItemLink>
+                    <MenuItemLink onClick={() => setModalActive(true)}>
                     <Icon src={ExitIcon}/>
                     </MenuItemLink>
                 </MenuItem>
@@ -59,6 +64,37 @@ const Navbar = props => {
                 </MenuItem>
             </Menu>
             </Wrapper>
+            <div className={modalActive ? "modal active" : "modal"} onClick={() => setModalActive(false)}>
+                    <div className='modal__content' onClick={e => e.stopPropagation()}>
+                        <div className='modal__title'>Вход</div>
+                        <div className='modal__subtitle'>Добро пожаловать в Look In</div>
+                        <Exit src={exit}/>
+                        <Form>
+                        <InputBox>
+                            <FormImg src={ManIcon}/>
+                            <Input placeholder='Ваше имя'></Input>
+                        </InputBox>
+                        <Line/> 
+                        <InputBox>
+                            <FormImg src={ManIcon}/>
+                            <Input placeholder='Пароль'></Input>
+                        </InputBox>
+                        <Line/> 
+                        </Form>
+                        <BtnContainer>
+                         <Btn>
+                             <BtnBorder>
+                                 Войти
+                             </BtnBorder>
+                         </Btn>
+                         <Descr>
+                         нажимая на кнопку вы даете согласие<br/> &nbsp;
+                            <Blue>на обработку персональных данных</Blue>
+                         </Descr>
+                        </BtnContainer>
+                        
+                </div>
+            </div>
         </Container>
     );
 };

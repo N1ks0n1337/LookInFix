@@ -1,12 +1,18 @@
 import styled from "styled-components";
 import blueHover from '../../image/specialization/blueHover.png'
-import WhiteBack from '../../image/specialization/top.png'
+import backgroundWhite from '../../image/backSpec.png'
 
 export const Container = styled.div`
     width: 100%;
-    margin-top: 20px;
+    background-color: #fff;
+    padding-bottom: 100px;
 `
-
+export const BackgroundWhite = styled.div`
+    background-image: url('${backgroundWhite}');
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-clip: text;
+`
 export const Wrapper = styled.div`
     position: relative;
     width: 100%;
@@ -19,13 +25,46 @@ export const SpecializationTypesItems = styled.div`
     flex-wrap: wrap;
     justify-content: center;
 `
-
 export const Item = styled.div`
     position: relative;
     margin: 15px;
+    width: 500px;
+    @media(max-width: 798px){
+        width: 400px;
+    }
+    @media(max-width: 611px){
+        width: 300px;
+    }
+    @media(max-width: 561px){
+        width: 250px;
+    }
     :hover&{
-        background: url(${blueHover});
         cursor: pointer;
+        &:after{
+            opacity: 1;
+            transition: .2s ease-in-out;
+        }
+    }
+    &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(52,153,234,0.6);
+    opacity: 0;
+    z-index: 5;
+    }
+`
+export const ItemHoverImg = styled.img`
+    width: 15px;
+    height: 15px;
+    z-index: 10;
+    margin-top: 4px;
+    
+    @media (max-width:561px){
+        margin-top: 2px;
     }
 `
 export const ItemImg = styled.img`
@@ -39,10 +78,16 @@ export const ItemImg = styled.img`
     @media(max-width: 561px){
         width: 250px;
     }
-    
 `
 export const ItemHover = styled.a`
     display: none;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: 'Proxima Nova';
     font-size: 16px;
     font-weight: 600;
     font-stretch: normal;
@@ -51,34 +96,22 @@ export const ItemHover = styled.a`
     letter-spacing: 1.2px;
     text-align: center;
     color: #fff;
+    z-index: 10;
     ${Item}:hover &{
         display: block;
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        background-color: rgba(52,153,234,0.6);
-        transform: translate(-50%, -50%);
+    }
+    @media (max-width:561px){
+        font-size: 12px;
     }
 `
-export const HoverBg = styled.p`
-    display: none;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(52,153,234,0.6);
-    ${Item}:hover{
-        display: block;
-        
-    } 
-`
+
 export const ItemText = styled.h2`
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: contain;
+    font-family: 'Playfair Display';
     font-size: 32px;
     font-weight: normal;
     font-stretch: normal;
@@ -87,6 +120,11 @@ export const ItemText = styled.h2`
     letter-spacing: normal;
     text-align: center;
     color: #2e2e2e;
+    z-index: 10;
+    ${Item}:hover &{
+        top: 40%;
+        color: #fff;
+    }
     @media(max-width: 611px){
         font-size: 20px;
     }
@@ -100,7 +138,6 @@ export const Line = styled.hr`
     }
 `
 export const Title = styled.div`
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,17 +145,13 @@ export const Title = styled.div`
     font-size: 50px;
     padding-top: 50px;
     padding-bottom: 15px;
-<<<<<<< HEAD
     margin-bottom: 81px;
-=======
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
     @media(max-width: 798px){
         font-size: 37px
     }
     @media(max-width: 708px){
         font-size: 30px
     }
-<<<<<<< HEAD
     @media(max-width: 554px){
         padding-top: 0px;
         font-size: 27px;
@@ -126,16 +159,6 @@ export const Title = styled.div`
     }
     @media(max-width: 406px){
         font-size: 24px
-=======
-    @media(max-width: 596px){
-        font-size: 20px
-    }
-    @media(max-width: 432px){
-        font-size: 15px
-    }
-    @media(max-width: 355px){
-        font-size: 12px
->>>>>>> 5f6f31b58066c6bb045fdbe56eac0dde40bd6b9b
     }
 `
 export const TitleBlue = styled.span`

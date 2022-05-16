@@ -3,10 +3,41 @@ import FamilyBg from '../../image/provide/FamilyBg.png'
 import SpaceBg from '../../image/provide/SpaceBg.png'
 import AvocadoBg from '../../image/provide/AvocadoBg.png'
 import RunBg from '../../image/provide/RunBg.png'
+import backgroundWhite from '../../image/backSpec.png'
+import BackBottomimg from '../../image/backbottom.png'
+
+export const BackBottom = styled.div`
+        background-image: url('${BackBottomimg}');
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-clip: text;
+        @media(min-width: 1925px){
+            background-size: 100%;        
+        }
+`
+
+export const BackgroundWhite = styled.div`
+        background-image: url('${backgroundWhite}');
+        background-repeat: no-repeat;
+        background-position: 0 -25%;
+        background-clip: text;
+        @media(max-width: 1529px){
+            background-position: 0 -13%;
+        }
+        @media(max-width: 845px){
+            background-position: 0 -17%;
+        }
+        @media(max-width: 700px){
+            background-position: 0 -22%;
+        }
+        @media(max-width: 554px){
+            background-position: 0 -27%;
+        }
+`
 
 export const Container = styled.div`
     width: 100%;
-    margin-top: 20px;
+    padding-bottom: 100px;
 `
 
 export const Wrapper = styled.div`
@@ -18,7 +49,6 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.div`
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
